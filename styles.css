@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-image: url('back.jpeg'); /* Add your background image path here */
+    background-size: cover; /* Stretches the image to cover the entire header */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background */
+    padding: 40px 0;
+    text-align: center;
+    position: relative; /* Keeps the image properly positioned */
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* This keeps the photo and text side by side */
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; /* Adds space between the image and name */
+}
+
+.name-title {
+    text-align: left;
+}
+
+.name-title h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.name-title p {
+    color: #b0b0b0;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+.about p, .skills ul, .projects p {
+    font-size: 1.2em;
+    color: #b0b0b0;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.skills ul li {
+    padding: 8px 0;
+}
+
+.skills ul li::before {
+    content: "• ";
+    color: #fff;
+}
+
+a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0;
+    color: #b0b0b0;
+}
+
+footer p {
+    font-size: 1em;
+}
